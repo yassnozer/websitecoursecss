@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.flexhight {
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: flex-start;
+align-content: space-between;justify-content: center;}
+.flexbottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#artbox{
+    width: 100%;
+    float: none;
+    height: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;}
+#artbox img{
+    height: 150px;
+    width: 400px;
+padding: 15px;}
+main{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;  
+    
+}
+#article{
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+    
+    
+    /* margin-top:2vh; */
+/* flex-wrap: nowrap; *//* align-items: baseline; *//* flex-direction: row; *//* justify-content: space-around; */}
+#article img{
+    padding:5px;
+    width: 360px;
+    height: 240px;
+}
+
+a{
+    text-decoration: none;
+}
+p, h1, li{
+    font-family: 'Cairo', sans-serif;
+    text-align: center !important;
+}
+
+
+@-webkit-keyframes slide-right{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(100px);transform:translateX(100px)}}@keyframes slide-right{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(100px);transform:translateX(100px)}}
+@-webkit-keyframes slide-left{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(-100px);transform:translateX(-100px)}}@keyframes slide-left{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(-100px);transform:translateX(-100px)}}
+header{
+    height:100px;
+    width: 100%;
+    background-image: linear-gradient(to right,#34ace0,#227093);
+overflow: hidden;
+}
+#logobox{
+    
+    width: 30%;
+    height:100%;
+float: right;
+background: rgba(33, 38, 43, 0.6);
+}
+#logobox img{
+
+    height:100%;
+    border-radius: 50%;
+    width: 30%;
+}
+#logobox h1{
+    line-height:100px;
+    float: left;
+    
+    color: aliceblue;
+padding: 0 16px;}
+nav
+    {
+        width: 70%;
+        float: left;
+        height: 100px;
+        text-align: center;
+    }
+    nav li   {
+        display: inline-block;
+        line-height: 100px;
+        width:100px;
+    }
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size:20px;
+    display:inline-block;
+   }
+   nav a:hover{
+       background-color:white;
+       color:black;
+       height:100%;
+       width: 100%;
+   }
+   main{
+       width:100%;
+       height: 450px;
+       background-color:#227093;
+       border-top: 2px solid white;
+          animation-name: changeback;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+    }
+   @keyframes changeback{
+       0%{
+background-color:#2c2c54
+       }
+       50%{
+        background-color:#706fd3
+       }
+       100%{
+        background-color:#227093
+       }
+   }
+   aside{
+       width:30%;
+       height:100%;
+       float:left;
+       background-color:#706fd3;
+       text-align:center
+   ;}
+   aside img{
+       width:95%;
+  }
+  aside h1
+    {
+        color: #fff;
+        font-weight: bold;
+        font-size: 27px;
+        padding: 15px 0px;
+        border-bottom: 3px solid #fff;
+    }
+  main article{
+    position:relative;
+      width:70%;
+      float:right;
+       
+      height: 100%;
+  flex-grow: 2;}
+  #box{
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+      position:absolute;
+      width:50%;
+      height:50%;
+      left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    background-color: #ffffffa3;
+    border:1px solid rgb(0, 0, 0)}
+      #box h1{
+         color:#ffffff;
+          border-bottom: 2px solid rgb(255, 255, 255);
+    padding: 15px 0;}
+    #box p
+        {
+            color: rgb(255, 255, 255);
+            text-align: justify;
+            direction: rtl;
+        }
+        #social
+        {
+            width: 100%;
+            display: flex;
+        justify-content: center;
+    margin-top: 15px;}
+        #social img
+            {
+                width: 45px;
+                border-bottom: 2px solid #fff;    
+            padding-bottom: 10px;   
+        padding-left: 3px;
+    padding-right: 3px     }
+    #social img:hover{
+        width: 50px;
+        border-bottom: 2px solid #000;
+    }
+    @media only screen and (min-width:767px) and (max-width:1070px){
+        #logobox{
+            width: 35%;
+        }
+        nav{
+            
+                width: 65%;
+            
+        }
+    }
+    /* @media only screen and (min-width:620px) and (max-width:767px){
+
+        #logobox{
+            width: 40%;
+        }
+        nav{
+            
+                width: 60%;
+        }
+        aside{
+            width: 100%;
+            height: auto;
+            float: none;
+        }
+        article{
+            float: none;
+            width: 100%;
+        }
+        main{
+            height:auto;
+        }
+    } */
+
+    @media only screen and (min-width:580px) and (max-width:767px){
+        header {
+            height: auto;
+        }
+        #logobox{
+            width: 100%;
+            text-align: center;
+    
+        }
+        #logobox h1{
+            float: none;
+            /* width: 100%; */
+            text-align: center;
+         }
+    #logobox img{
+        float: none;
+        width: 20%;
+        border-radius: 100%;
+    }
+        nav{
+            
+                width: 100%;
+            
+        }
+aside {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16%;
+}
+main{
+    height:  300px;
+}
+main article{
+    width: 100%;
+}
+#box{
+    height: auto; 
+    
+}
+    }
+    @media only screen and (max-width:580px) {
+        header {
+            height: auto;
+        }
+        #logobox{
+            width: 100%;
+            text-align: center;
+    
+        }
+        #logobox h1{
+            float: none;
+            /* width: 100%; */
+            text-align: center;
+         }
+    #logobox img{
+        float: none;
+        width: 20%;
+        border-radius: 100%;
+    }
+        nav{
+            height: auto;
+                width: 100%;
+                
+                    float: none;
+                    justify-content: center;
+                    display: flex;
+                
+        }
+
+        nav li{display: block;
+        }
+aside {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16%;
+}
+main{
+    height:  300px;
+}
+main article{
+    width: 100%;
+}
+#box{
+    height: auto; 
+    
+}
+    }
